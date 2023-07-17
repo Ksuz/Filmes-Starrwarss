@@ -28,7 +28,8 @@
     transform: scale(1.1);
   }
 
-  .ShowInfo, .HideInfo{
+  .ShowInfo, 
+  .HideInfo{
     padding: 15px 20px;
     background-color: #344352;
     color: #fff;
@@ -42,7 +43,8 @@
     
   }
 
-  .ShowInfo:hover, .HideInfo:hover{
+  .ShowInfo:hover,
+  .HideInfo:hover{
     background-color: #47737e;
   }
 
@@ -117,5 +119,91 @@
 
     .Container-info {
       width: 100%; 
+    }
+    .Box {
+      font-size: 16px;
+    }
+  
+    .ShowInfo, 
+    .HideInfo{
+      font-size: 20px;
+    }
+  }
+
+  /* Resoluções mais alta */
+
+  @media (min-width: 1440px) {
+    .Container {
+      justify-content: space-around;
+      
+    }
+
+    .Caixas {
+      width: 23%;
+      margin: 33px;
+      padding: 60px;
+      font-size: 24px;
+    }
+
+    .Box {
+      font-size: 24px;
+    }
+  
+    .ShowInfo, 
+    .HideInfo{
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 2160px) {
+    .Container {
+      justify-content: space-around;
+      
+    }
+
+    .Caixas {
+      width: 21%;
+      margin: 3.7%;
+      padding: 60px;
+      font-size: 30px;
+    }
+
+    .Box {
+      font-size: 30px;
+    }
+  
+    .ShowInfo, 
+    .HideInfo{
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 2561px) {
+    .Container {
+      justify-content: space-around;
+      
+    }
+    
+    
+    .Caixas {
+      width: 22%;
+      margin: 4%;
+      padding: 60px;
+      font-size: 40px;
+    }
+    
+    .Container-info {
+      width: 80%; 
+      max-width: 45%;
+    }
+    
+    .Box {
+      font-size: 45px;
+      
+    }
+  
+    .ShowInfo, 
+    .HideInfo{
+      font-size: 45px;
     }
   }
