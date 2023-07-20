@@ -1,12 +1,20 @@
 import React from 'react';
 import FetchAPI from './components/FetchAPI';
 import './App.css'
+import Quotes from './components/Quotes';
+
 
 const App = () => {
   return (
-    <div>
-      <h1 className='titulo'>Filmes de Star Wars</h1>
-     <FetchAPI /> 
+    <div>   
+      <div className="navbar">     
+      <h1 className='titulo'>STAR WARS</h1>
+      <h4>
+        <Quotes/>
+      </h4>
+      </div>
+      <FetchAPI /> 
+     
     </div>
   );
 };

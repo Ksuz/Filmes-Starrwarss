@@ -1,10 +1,41 @@
+body {
+  background-image: url(imgs/background.jpg)
+
+}
+
+.navbar{
+  display: inline;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
 .titulo {
-    font-size: 3.2em;
-    line-height: 1.1;
-    text-align: center;
-    color: #ebebeb;
-    font-weight: 700;
-    margin-top: 10px;
-    
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffe41a;
+  font-weight: 700;
+  margin-top: 10px;
+  text-shadow: 2px 5px 10px #ffe945;
+  cursor: pointer;
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  .titulo{
+    font-size: 60px;
   }
-  
+}
+
+@media (min-width: 2160px) {
+  .titulo {
+    font-size: 140px;
+  }
+}
+
+@media (min-width: 2561px) {
+  .titulo {
+    font-size: 180px;
+  }
+}

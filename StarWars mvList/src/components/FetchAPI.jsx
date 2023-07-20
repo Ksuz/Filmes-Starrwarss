@@ -57,7 +57,8 @@ const FetchAPI = () => {
             <p>{movie.release_date}</p>
             <button
               className='ShowInfo'
-              onClick={() => handleInformaçõesExtra(movie.episode_id)}>Informações Extras</button>
+              onClick={() => handleInformaçõesExtra(movie.episode_id)}
+              >Informações Extras</button>
           </div>
         ))}
       </div>
@@ -70,9 +71,11 @@ const FetchAPI = () => {
             <p>Diretor: {filmeSelecionado.director}</p>
             <p>Producers: {filmeSelecionado.producer}</p>
             <p>Movie Crawl: {filmeSelecionado.opening_crawl}</p>
+            <div className="button-box">
             <button
               className='HideInfo'
               onClick={() => handleInformaçõesExtra(false)}>Sair</button>
+            </div>
           </div>
         </div>
       )}
